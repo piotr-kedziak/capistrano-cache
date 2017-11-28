@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Capistrano::Cache::VERSION
   s.authors     = ['Piotr Kędziak']
   s.email       = ['piotr@kedziak.com']
-  s.homepage    = 'TODO'
-  s.summary     = 'TODO: Summary of Capistrano::Cache.'
-  s.description = 'TODO: Description of Capistrano::Cache.'
+  s.homepage    = ''
+  s.summary     = 'Summary of Capistrano::Cache.'
+  s.description = 'Description of Capistrano::Cache.'
   s.license     = 'MIT'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
