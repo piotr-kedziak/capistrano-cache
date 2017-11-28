@@ -1,8 +1,6 @@
 # Capistrano::Cache
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+This Capistrano plugin is designed to clear a cache on your instance with Rails app.
+capistrano-rails requires Capistrano 3.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -19,6 +17,17 @@ $ bundle
 Or install it yourself as:
 ```bash
 $ gem install capistrano-cache
+```
+
+And add that line to your `Capfile`:
+```ruby
+require 'capistrano/cache'
+```
+
+## Usage
+After installation, you can run a Capistrano task on any of yours environments stages:
+```bash
+cap production cache:clear
 ```
 
 ## Contributing

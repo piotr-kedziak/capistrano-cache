@@ -1,5 +1,5 @@
 namespace :cache do
-  desc 'Clear a Rails.cache on instance'
+  desc 'Clear a Rails.cache on an instance'
   task :clear do
     on roles(:app) do
       within current_path do
