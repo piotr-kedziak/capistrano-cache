@@ -30,6 +30,13 @@ After installation, you can run a Capistrano task on any of yours environments s
 cap production cache:clear
 ```
 
+## Hooks
+This gem will, by default add a hook to run a `cache:clear` task after each deploy.
+You can change this behaviour by adding this line to your `deploy.rb` file:
+```ruby
+set :clear_cache_after_deploy, true # by default or false
+```
+
 ## Contributing
 1. Fork it
 2. Create your feature branch (git checkout -b my-new-feature)
