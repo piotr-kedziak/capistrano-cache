@@ -6,7 +6,7 @@ capistrano-rails requires Capistrano 3.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'capistrano-cache'
+gem 'capistrano-cache', require: false
 ```
 
 And then execute:

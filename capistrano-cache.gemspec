@@ -9,12 +9,13 @@ Gem::Specification.new do |s|
   s.version     = Capistrano::Cache::VERSION
   s.authors     = ['Piotr Kędziak']
   s.email       = ['piotr@kedziak.com']
-  s.homepage    = ''
-  s.summary     = 'Summary of Capistrano::Cache.'
-  s.description = 'Description of Capistrano::Cache.'
+  s.homepage    = 'https://github.com/piotr-kedziak/capistrano-cache'
+  s.summary     = 'Capistrano tesk to clead a cache on your Rails instances'
+  s.description = 'Designed to run Rails.cache.clear on your instances menaged by Capistrano'
   s.license     = 'MIT'
 
-  s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  s.files         = `git ls-files`.split($/)
+  s.require_paths = ['lib']
 
   s.add_dependency 'capistrano', '>= 3.9.0'
   s.add_dependency 'rails', '~> 5.1.4'
