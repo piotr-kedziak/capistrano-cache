@@ -24,6 +24,14 @@ And add that line to your `Capfile`:
 require 'capistrano/cache'
 ```
 
+By default, a cache will be cleared on an `:app` role so please add it to your Capistrano environment config file for ex:
+
+```ruby
+server 'deployer@127.0.0.1',
+       user:        'deployer',
+       roles:       %w[app db web]
+```
+
 ## Usage
 After installation, you can run a Capistrano task on any of yours environments stages:
 ```bash
